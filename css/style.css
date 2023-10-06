@@ -253,8 +253,8 @@ textarea {
     border: 2px solid #717D96;
     border-radius: 5px;
     padding: 10px;
-    height: 150px;
-    width: 300px;
+    height: 125px;
+    width: 600px;
 }
 
 button {
@@ -304,9 +304,6 @@ footer a {
 }
 
 @media (width <=480px) {
-    body {
-        width: 100vw;
-    }
 
     nav {
         flex-direction: column;
@@ -321,7 +318,7 @@ footer a {
     }
 
     .head-section {
-        max-width: 90vw;
+        width: 100vw;
         align-items: center;
         text-align: center;
     }
@@ -348,5 +345,9 @@ footer a {
 
     .legals {
         flex-direction: column;
+    }
+
+    textarea {
+        width: 432px;
     }
 }
