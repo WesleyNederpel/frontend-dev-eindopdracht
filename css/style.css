@@ -87,6 +87,7 @@ header {
     object-fit: cover;
     background-position: center;
     height: 70vh;
+    text-align: center;
 }
 
 .head-section {
