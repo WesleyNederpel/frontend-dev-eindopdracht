@@ -4,23 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samsung Galaxy S23</title>
     <link rel="stylesheet" href="/frontend-dev-eindopdracht/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <nav>
-
+        <div class="nav-logo">
+            <img src="/frontend-dev-eindopdracht/img/samsung-logo.png" alt="samsung-logo">
+        </div>
+        <div class="links">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a class="main-nav" href="#">Link</a>
+        </div>
     </nav>
     <header>
-
+        <section class="head-section">
+            <h1>
+                Samsung Galaxy S23
+            </h1>
+            <p>
+                De Samsung Galaxy S23 is de nieuwste toevoeging aan de populaire Galaxy S-serie smartphones.
+                Deze krachtige en
+                geavanceerde telefoon biedt een indrukwekkende combinatie van prestaties, functies en stijl. Met
+                een verbluffend helder
+                en groot display, verbeterde camera's en de nieuwste technologische innovaties, levert de Galaxy
+                S23 een eersteklas
+                gebruikerservaring.
+            </p>
+            <div class="head-links">
+                <a class="head-button" href="#">Link</a>
+                <a class="side-button" href="#">Link</a>
+            </div>
+        </section>
     </header>
     <main>
+        <h2>
+            Customer Reviews
+        </h2>
+        <section class="reviews">
+            <article class="review-1">
+                <img src="/frontend-dev-eindopdracht/img/budspro.png" alt="budspro2">
+                <div class="content">
+                    <h3>
+                        Peter
+                    </h3>
+                    <div class="rating-1">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        "De Galaxy Buds Pro 2 bieden een meeslepende audiokwaliteit en handige functies in een
+                        stijlvolle
+                        draadloze oortelefoon."
+                    </p>
+                    <a href="#">Bekijk Product</a>
+                </div>
+            </article>
+            <article class="review-2">
+                <img src="/frontend-dev-eindopdracht/img/tabs9.png" alt="tabs9">
+                <div class="content">
+                    <h3>
+                        Henk
+                    </h3>
+                    <div class="rating-2">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>
+                        "De Galaxy Tab S9 levert een krachtige en veelzijdige tabletervaring met een prachtig scherm en
+                        indrukwekkende
+                        prestaties.
+                        "
+                    </p>
+                    <a href="#">Bekijk Product</a>
+                </div>
+            </article>
+            <article class="review-3">
+                <img src="/frontend-dev-eindopdracht/img/watch6.png" alt="watch6">
+                <div class="content">
+                    <h3>
+                        Geert
+                    </h3>
+                    <div class="rating-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        "De Galaxy Watch 6 biedt een naadloze combinatie van stijl en functionaliteit met indrukwekkende
+                        gezondheids- en
+                        fitnessfuncties."
+                    </p>
+                    <a href="#">Bekijk Product</a>
+                </div>
+            </article>
+        </section class="contact">
+        <h4>
+            Contact
+        </h4>
+        <form action="">
+            <div class="name">
+                <div class="first">
+                    <label for="firstname">Voornaam</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Voornaam" required>
+                </div>
+                <div class="sur">
+                    <label for="surname">Achternaam</label>
+                    <input type="text" id="surname" name="surname" placeholder="Achternaam" required>
+                </div>
+            </div>
 
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+
+            <div class="city-date">
+                <div class="city">
+                    <label for="city">Woonplaats</label>
+                    <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+                </div>
+                <div class="date">
+                    <label for="birthdate">Geboortedatum</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+
+            <label for="subject">Onderwerp</label>
+            <select id="subject" name="subject" required>
+                <option value="choose">Kies een onderwerp voor het bericht...</option>
+            </select>
+
+            <label for="message">Bericht</label>
+            <input type="textarea" id="message" name="message" required>
+
+            <label for="letter">Inschrijven voor nieuwsbrief?</label>
+            <div class="radio-select">
+                <div class="option">
+                    <input type="radio" id="letter" name="letter" value="ja">
+                    <label for="ja">Ja</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="letter" name="letter" value="nee">
+                    <label for="nee">Nee</label>
+                </div>
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="agree" name="agree" value="agree">
+                <label for="agree">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+            <button type="submit">Versturen</button>
+        </form>
     </main>
     <footer>
-
+        <img src="/frontend-dev-eindopdracht/img/samsung-logo.png" alt="samsung-logo">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>Copyright 2023 Samsung</p>
+            </div>
+            <div class="legals">
+                <a href="#">Privacyverklaring</a>
+                <a href="#">Algemene voorwaarden</a>
+                <a href="#">Cookiebeleid</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
     </footer>
 
 </body>
