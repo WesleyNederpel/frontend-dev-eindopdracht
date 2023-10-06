@@ -16,8 +16,8 @@
             <img src="/frontend-dev-eindopdracht/img/samsung-logo.png" alt="samsung-logo">
         </div>
         <div class="links">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+            <a href="#reviews">Customer Reviews</a>
+            <a href="#contact">Contact</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
             <a class="main-nav" href="#">Link</a>
@@ -38,8 +38,8 @@
                 gebruikerservaring.
             </p>
             <div class="head-links">
-                <a class="head-button" href="#">Link</a>
-                <a class="side-button" href="#">Link</a>
+                <a class="head-button" href="#">Bestellen</a>
+                <a class="side-button" href="#">Specificaties</a>
             </div>
         </section>
     </header>
@@ -47,7 +47,7 @@
         <h2>
             Customer Reviews
         </h2>
-        <section class="reviews">
+        <section id="reviews">
             <article class="review-1">
                 <img src="/frontend-dev-eindopdracht/img/budspro.png" alt="budspro2">
                 <div class="content">
@@ -112,61 +112,63 @@
                     <a href="#">Bekijk Product</a>
                 </div>
             </article>
-        </section class="contact">
-        <h4>
-            Contact
-        </h4>
-        <form action="">
-            <div class="name">
-                <div class="first">
-                    <label for="firstname">Voornaam</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Voornaam" required>
+        </section>
+        <section id="contact">
+            <h4>
+                Contact
+            </h4>
+            <form action="">
+                <div class="name">
+                    <div class="first">
+                        <label for="firstname">Voornaam</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Voornaam" required>
+                    </div>
+                    <div class="sur">
+                        <label for="surname">Achternaam</label>
+                        <input type="text" id="surname" name="surname" placeholder="Achternaam" required>
+                    </div>
                 </div>
-                <div class="sur">
-                    <label for="surname">Achternaam</label>
-                    <input type="text" id="surname" name="surname" placeholder="Achternaam" required>
-                </div>
-            </div>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required>
 
-            <div class="city-date">
-                <div class="city">
-                    <label for="city">Woonplaats</label>
-                    <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+                <div class="city-date">
+                    <div class="city">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+                    </div>
+                    <div class="date">
+                        <label for="birthdate">Geboortedatum</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
                 </div>
-                <div class="date">
-                    <label for="birthdate">Geboortedatum</label>
-                    <input type="date" id="birthdate" name="birthdate" required>
-                </div>
-            </div>
 
-            <label for="subject">Onderwerp</label>
-            <select id="subject" name="subject" required>
-                <option value="choose">Kies een onderwerp voor het bericht...</option>
-            </select>
+                <label for="subject">Onderwerp</label>
+                <select id="subject" name="subject" required>
+                    <option value="choose">Kies een onderwerp voor het bericht...</option>
+                </select>
 
-            <label for="message">Bericht</label>
-            <textarea name="message" id="message"></textarea>
+                <label for="message">Bericht</label>
+                <textarea name="message" id="message"></textarea>
 
-            <label for="letter">Inschrijven voor nieuwsbrief?</label>
-            <div class="radio-select">
-                <div class="option">
-                    <input type="radio" id="letter" name="letter" value="ja">
-                    <label for="ja">Ja</label>
+                <label for="letter">Inschrijven voor nieuwsbrief?</label>
+                <div class="radio-select">
+                    <div class="option">
+                        <input type="radio" id="letter" name="letter" value="ja">
+                        <label for="ja">Ja</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="letter" name="letter" value="nee">
+                        <label for="nee">Nee</label>
+                    </div>
                 </div>
-                <div class="option">
-                    <input type="radio" id="letter" name="letter" value="nee">
-                    <label for="nee">Nee</label>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                    <label for="agree">Ik ga akkoord met de algemene voorwaarden</label>
                 </div>
-            </div>
-            <div class="agree">
-                <input type="checkbox" id="agree" name="agree" value="agree">
-                <label for="agree">Ik ga akkoord met de algemene voorwaarden</label>
-            </div>
-            <button type="submit">Versturen</button>
-        </form>
+                <button type="submit">Versturen</button>
+            </form>
+        </section>
     </main>
     <footer>
         <img src="/frontend-dev-eindopdracht/img/samsung-logo.png" alt="samsung-logo">
